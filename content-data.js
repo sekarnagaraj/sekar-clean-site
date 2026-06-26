@@ -18,15 +18,15 @@ const portfolioData = {
     ],
     "stats": [
       {
-        "value": "13+",
+        "value": "15+",
         "label": "Years in enterprise technology"
       },
       {
-        "value": "40+",
+        "value": "50+",
         "label": "Enterprise initiatives & accelerators"
       },
       {
-        "value": "10+",
+        "value": "12+",
         "label": "Architecture and platform themes"
       },
       {
