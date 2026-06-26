@@ -1,0 +1,15 @@
+{
+  id: "new-blog-id",
+  title: "New Blog Title",
+  category: "AI",
+  date: "2026-06-26",
+  source: "New blog",
+  summary: "Short summary shown on the blog card.",
+  tags: ["AI", "Azure", "Quality"],
+  body: [
+    "Paragraph 1.",
+    "Paragraph 2.",
+    "Paragraph 3.",
+    "Paragraph 4."
+  ]
+},

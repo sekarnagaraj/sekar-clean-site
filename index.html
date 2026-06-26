@@ -1,102 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sekar Nagaraj | Data Platform Leader, AI, Cloud & Digital Assurance</title>
-  <meta name="description" content="Portfolio of Sekar Nagaraj - AI, Cloud, Quality Engineering, Data Engineering, Migration and Enterprise Technology Leadership." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sekar Nagaraj | AI, Cloud, Data & Enterprise Quality Engineering</title>
+  <meta name="description" content="Sekar Nagaraj - Principal Consultant focused on AI, Azure cloud, data engineering, enterprise quality engineering, SRE, modernization, Power BI and technology leadership." />
+  <meta property="og:title" content="Sekar Nagaraj | AI, Cloud, Data & Quality Engineering" />
+  <meta property="og:description" content="A living professional portfolio covering AI copilots, Azure cloud assurance, data engineering, migration, SRE, Power BI modernization and technology leadership." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="brand">Sekar Nagaraj</div>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">SN</span>
+        <span>
+          <strong>Sekar Nagaraj</strong>
+          <small>AI • Cloud • Data • QA</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#projects">Projects</a>
+        <a href="#architectures">Architecture</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#resume">Resume</a>
+        <a href="#future">Add Content</a>
+        <a class="nav-cta" href="https://www.linkedin.com/in/sekarnagaraj/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Principal Consultant • AI • Cloud • Quality Engineering</p>
-        <h1>Building reliable enterprise technology through AI, cloud, data and quality strategy.</h1>
-        <p class="summary">I help teams design, validate and deliver enterprise-grade platforms across AI copilots, Azure cloud, data engineering, migration, Power BI modernization, SRE, automation and product technology initiatives.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="https://www.linkedin.com/in/sekarnagaraj/" target="_blank">LinkedIn</a>
+    <main id="home">
+      <section class="hero section-pad">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Living professional portfolio</div>
+          <h1>Building reliable enterprise technology through AI, cloud, data and quality strategy.</h1>
+          <p class="hero-text" id="hero-headline"></p>
+          <div class="tag-row" id="profile-tags"></div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore my work</a>
+            <a class="btn secondary" href="#blogs">Read blogs</a>
+            <a class="btn ghost" href="#future">How to add more later</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-card">
-        <img src="assets/profile.jpg" alt="Sekar Nagaraj" />
-        <div class="card-note">AI, Cloud & Enterprise Quality Engineering</div>
-      </div>
-    </section>
+        <div class="hero-card reveal delay-1">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Sekar Nagaraj profile photo" />
+          </div>
+          <div class="profile-card-copy">
+            <h2 id="profile-name"></h2>
+            <p id="profile-role"></p>
+            <div class="mini-grid" id="profile-stats"></div>
+          </div>
+        </div>
+      </section>
 
-    <section class="stats">
-      <div><strong>15+</strong><span>Years in technology delivery</span></div>
-      <div><strong>40+</strong><span>Enterprise initiatives</span></div>
-      <div><strong>AI</strong><span>Copilots, agents & automation</span></div>
-      <div><strong>Data</strong><span>Data Migration, Modernization and Data Science</span></div>
-      <div><strong>Azure</strong><span>Cloud, SRE & resilience</span></div>
-    </section>
+      <section class="section-pad compact" id="capabilities">
+        <div class="section-heading reveal">
+          <span class="eyebrow">What I do</span>
+          <h2>Capabilities organized like a senior technology leader, not a generic resume.</h2>
+          <p>Each area connects hands-on delivery, architecture thinking, QA strategy and stakeholder communication.</p>
+        </div>
+        <div class="capability-grid" id="capability-grid"></div>
+      </section>
 
-    <section id="work" class="section">
-      <p class="eyebrow">What I do</p>
-      <h2>Work organized by capability</h2>
-      <div class="grid cards">
-        <article><h3>AI & Copilot Engineering</h3><p>Azure OpenAI, Semantic Kernel, AI agents, enterprise copilots, search-based intelligence and responsible AI workflows.</p></article>
-        <article><h3>Cloud, SRE & Azure Resilience</h3><p>AKS, Cosmos DB, Service Bus, Functions, App Services, APIM, observability, alerts, workbooks and chaos engineering.</p></article>
-        <article><h3>Quality Engineering Strategy</h3><p>Enterprise QA strategy, test modernization, automation frameworks, performance, API, data validation and governance.</p></article>
-        <article><h3>Data Engineering & Fabric</h3><p>Bronze-Silver-Gold validation, Microsoft Fabric, PySpark, data quality, warehouse testing and DP-700 learning content.</p></article>
-        <article><h3>Migration & Modernization</h3><p>VB6 to .NET, ADF to PySpark, Cognos/Power BI modernization, reporting migration and cloud-native transformation.</p></article>
-        <article><h3>Product Technology Leadership</h3><p>Technology leadership for product initiatives, architecture shaping, API validation, analytics, user experience and delivery discipline.</p></article>
-      </div>
-    </section>
+      <section class="section-pad dark-panel" id="projects">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2>Project case studies</h2>
+          <p>These are structured around the actual themes you have worked on: AI, Azure, SRE, data engineering, migration, reporting, QA and product technology leadership.</p>
+        </div>
+        <div class="toolbar reveal">
+          <input id="project-search" type="search" placeholder="Search projects, tools, skills..." aria-label="Search projects" />
+          <select id="project-filter" aria-label="Filter projects by category">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
 
-    <section id="projects" class="section alt">
-      <p class="eyebrow">Selected work</p>
-      <h2>Project case studies</h2>
-      <div class="project-list">
-        <div class="project"><span>01</span><div><h3>Claims Copilot</h3><p>Enterprise AI assistant using Azure OpenAI, Semantic Kernel, Azure AI Search, Cosmos DB, Redis and agentic workflows.</p><small>AI • Azure • Enterprise Architecture</small></div></div>
-        <div class="project"><span>02</span><div><h3>Azure Chaos Engineering & SRE Dashboard</h3><p>Resilience validation across AKS, Cosmos DB, Service Bus, Functions, APIM and observability dashboards.</p><small>Azure • AKS • SRE • Chaos</small></div></div>
-        <div class="project"><span>03</span><div><h3>Data & AI Quality Engineering Framework</h3><p>Testing framework for data platforms covering schema, counts, transformations, referential integrity, DQ and compliance checks.</p><small>Data Engineering • QA • Governance</small></div></div>
-        <div class="project"><span>04</span><div><h3>Azure Data Engineering and Platform Architect</h3><p>Concept notes, scenario-based learning, monitoring, governance, security, PySpark and Fabric implementation patterns.</p><small>Fabric • PySpark • Data Platform</small></div></div>
-        <div class="project"><span>05</span><div><h3>Migration & Modernization Programs</h3><p>VB6 modernization, ADF to PySpark revamp, Power BI deployment pipelines, reporting migration and enterprise QA planning.</p><small>Migration • Modernization • QA Strategy</small></div></div>
-        <div class="project"><span>06</span><div><h3>FinTech Product Business Leader</h3><p>Consulted and Supported a fintech product initiative as technology lead across architecture, APIs, product validation, analytics and delivery quality.</p><small>Product • APIs • Analytics • Leadership</small></div></div>
-      </div>
-    </section>
+      <section class="section-pad" id="architectures">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Architecture gallery</span>
+          <h2>Reusable architecture thinking</h2>
+          <p>Use this section to add diagrams later. For now, it works as an index of architecture themes you can convert into visuals.</p>
+        </div>
+        <div class="architecture-grid" id="architecture-grid"></div>
+      </section>
 
-    <section id="blogs" class="section">
-      <p class="eyebrow">Writing & learning</p>
-      <h2>Blog areas to build</h2>
-      <div class="tags">
-        <span>AI Agents</span><span>Azure OpenAI</span><span>Semantic Kernel</span><span>Azure SRE</span><span>Chaos Engineering</span><span>Microsoft Fabric</span><span>Power BI</span><span>Data Quality</span><span>Migration Testing</span><span>QA Leadership</span><span>API Automation</span><span>Product Thinking</span>
-      </div>
-    </section>
+      <section class="section-pad soft-panel" id="blogs">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Writing & learning</span>
+          <h2>Starter blog library from previous LinkedIn-style content and technical discussions</h2>
+          <p>These are written as publishable blog drafts. You can edit them, expand them, or post them as LinkedIn articles.</p>
+        </div>
+        <div class="toolbar reveal">
+          <input id="blog-search" type="search" placeholder="Search blogs by AI, Azure, Fabric, QA..." aria-label="Search blogs" />
+          <select id="blog-filter" aria-label="Filter blogs by category">
+            <option value="all">All blog categories</option>
+          </select>
+        </div>
+        <div class="blog-grid" id="blog-grid"></div>
+      </section>
 
-    <section id="resume" class="section alt">
-      <p class="eyebrow">Resume</p>
-      <h2>Professional profile</h2>
-      <div class="resume-grid">
-        <div><h3>Positioning</h3><p>Principal Consultant with strong experience in enterprise quality engineering, AI, cloud assurance, data platforms, migration and technology delivery leadership.</p></div>
-        <div><h3>Strengths</h3><p>Architecture thinking, delivery ownership, QA strategy, cloud reliability, AI solution design, data validation and stakeholder communication.</p></div>
-        <div><h3>Technology</h3><p>Azure, Azure OpenAI, Semantic Kernel, AKS, Cosmos DB, Service Bus, Power BI, Microsoft Fabric, PySpark, DevOps, APIs and automation frameworks.</p></div>
-      </div>
-    </section>
+      <section class="section-pad" id="learning">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Learning hub</span>
+          <h2>Notes you can keep expanding</h2>
+          <p>This area keeps certification notes, hands-on labs and concept explanations visible as proof of continuous learning.</p>
+        </div>
+        <div class="learning-grid" id="learning-grid"></div>
+      </section>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s connect</h2>
-      <p>For enterprise AI, cloud quality engineering, data engineering, modernization, QA strategy or technology leadership discussions.</p>
-      <a class="btn primary" href="https://www.linkedin.com/in/sekarnagaraj/" target="_blank">Connect on LinkedIn</a>
-    </section>
-  </main>
+      <section class="section-pad resume-section" id="resume">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Resume</span>
+          <h2>Interactive professional profile</h2>
+          <p>A resume section that emphasizes outcomes, capabilities and the kind of problems you solve.</p>
+        </div>
+        <div class="resume-layout">
+          <div class="resume-card reveal">
+            <h3>Positioning</h3>
+            <p>Principal Consultant with experience across enterprise quality engineering, AI, cloud assurance, data platforms, migration, Power BI modernization, SRE and technology delivery leadership.</p>
+            <h3>Professional narrative</h3>
+            <p>I help businesses adopt AI, Cloud and Analytics on Microsoft platforms through Digital Assurance, Data Engineering, Architecture Thinking and delivery governance.</p>
+            <h3>Core strengths</h3>
+            <div class="pill-list">
+              <span>Architecture thinking</span><span>Delivery ownership</span><span>QA strategy</span><span>Cloud resilience</span><span>AI solution design</span><span>Data validation</span><span>Stakeholder communication</span><span>Team enablement</span>
+            </div>
+          </div>
+          <div class="timeline reveal delay-1">
+            <div class="timeline-item"><strong>Quality Engineering Leadership</strong><span>Enterprise QA strategy, automation, API, performance, data validation and governance.</span></div>
+            <div class="timeline-item"><strong>Cloud & SRE</strong><span>Azure Monitor, AKS, Cosmos, Service Bus, HA validation, chaos engineering and observability.</span></div>
+            <div class="timeline-item"><strong>Data & BI Modernization</strong><span>Fabric, PySpark, Power BI, data quality, migration and semantic model validation.</span></div>
+            <div class="timeline-item"><strong>AI & Agentic Systems</strong><span>Azure OpenAI, Semantic Kernel, copilots, AI testing and enterprise architecture patterns.</span></div>
+          </div>
+        </div>
+      </section>
 
-  <footer>© <span id="year"></span> Sekar Nagaraj. Built as a living professional portfolio.</footer>
+      <section class="section-pad future-section" id="future">
+        <div class="section-heading reveal">
+          <span class="eyebrow">How to add more later</span>
+          <h2>This site is designed for continuous updates.</h2>
+          <p>For a new skill, use case, architecture or blog, you only edit one file: <code>content-data.js</code>. Then push to GitHub and Vercel will redeploy automatically.</p>
+        </div>
+        <div class="future-grid">
+          <article class="future-card reveal">
+            <h3>Add a new skill</h3>
+            <ol>
+              <li>Open <code>content-data.js</code>.</li>
+              <li>Find <code>capabilities</code>.</li>
+              <li>Copy one existing object and change title, summary and proof points.</li>
+              <li>Save, commit and push.</li>
+            </ol>
+          </article>
+          <article class="future-card reveal delay-1">
+            <h3>Add a new project / use case</h3>
+            <ol>
+              <li>Open <code>content-data.js</code>.</li>
+              <li>Find <code>projects</code>.</li>
+              <li>Add business problem, solution, technologies, highlights and learning.</li>
+              <li>It will appear automatically under Projects.</li>
+            </ol>
+          </article>
+          <article class="future-card reveal delay-2">
+            <h3>Add a new blog</h3>
+            <ol>
+              <li>Open <code>content-data.js</code>.</li>
+              <li>Find <code>blogs</code>.</li>
+              <li>Copy the blog template from <code>docs/ADD_CONTENT_GUIDE.md</code>.</li>
+              <li>Change title, category, summary, tags and body paragraphs.</li>
+            </ol>
+          </article>
+        </div>
+        <div class="code-panel reveal">
+          <pre><code>git add .
+git commit -m "Add new blog or project"
+git push</code></pre>
+          <p>After push, Vercel updates the live site automatically.</p>
+        </div>
+      </section>
+
+      <section class="section-pad contact-section" id="contact">
+        <div class="contact-card reveal">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <h2>Let’s connect</h2>
+            <p>For enterprise AI, cloud quality engineering, data engineering, modernization, QA strategy, SRE, Power BI or technology leadership discussions.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn primary" href="https://www.linkedin.com/in/sekarnagaraj/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+            <a class="btn secondary" href="mailto:sekarnagarajp@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Sekar Nagaraj</span>
+      <span>Built as a living professional portfolio.</span>
+    </footer>
+  </div>
+
+  <div class="modal" id="detail-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close-modal aria-label="Close details">×</button>
+      <div id="modal-content"></div>
+    </article>
+  </div>
+
+  <script src="content-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

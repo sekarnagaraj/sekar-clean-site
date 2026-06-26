@@ -1,0 +1,16 @@
+{
+  id: "new-project-id",
+  title: "New Project Name",
+  category: "AI & Cloud",
+  status: "Active",
+  summary: "One-line summary.",
+  businessProblem: "What problem did this solve?",
+  solution: "What approach did you take?",
+  technologies: ["Azure", "Python", "Power BI"],
+  highlights: [
+    "Highlight 1",
+    "Highlight 2",
+    "Highlight 3"
+  ],
+  learning: "What did you learn?"
+},
