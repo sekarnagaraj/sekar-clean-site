@@ -14,7 +14,7 @@ function renderProfile() {
   $('#profile-stats').innerHTML = data.profile.stats.map(stat => `
     <div class="stat-card"><strong>${escapeHtml(stat.value)}</strong><span>${escapeHtml(stat.label)}</span></div>
   `).join('');
-  $('#year').textContent = new Date().getFullYear();
+  if ($('#year')) $('#year').textContent = new Date().getFullYear();
 }
 
 function renderCapabilities() {
@@ -73,7 +73,7 @@ function renderBlogs() {
   const query = $('#blog-search').value || '';
   const category = $('#blog-filter').value;
   const filtered = data.blogs.filter(blog => {
-    const blob = [blog.title, blog.category, blog.summary, blog.source, ...(blog.tags || []), ...(blog.body || [])].join(' ');
+    const blob = [blog.title, blog.category, blog.summary, ...(blog.tags || []), ...(blog.body || [])].join(' ');
     return (category === 'all' || blog.category === category) && matches(blob, query);
   });
   $('#blog-grid').innerHTML = filtered.length ? filtered.map((blog, index) => `
@@ -82,7 +82,7 @@ function renderBlogs() {
       <h3>${escapeHtml(blog.title)}</h3>
       <p>${escapeHtml(blog.summary)}</p>
       <div class="tech-row">${blog.tags.slice(0, 4).map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div>
-      <span class="read-more">Read draft →</span>
+      <span class="read-more">Read article →</span>
     </article>
   `).join('') : `<div class="empty-state">No blog matched your search.</div>`;
   observeReveals();
@@ -120,7 +120,7 @@ function openBlog(id) {
   $('#modal-content').innerHTML = `
     <span class="eyebrow">${escapeHtml(blog.category)}</span>
     <h2 id="modal-title">${escapeHtml(blog.title)}</h2>
-    <p class="source"><strong>Date:</strong> ${escapeHtml(blog.date)} · <strong>Source:</strong> ${escapeHtml(blog.source)}</p>
+    <p class="source"><strong>Date:</strong> ${escapeHtml(blog.date)}</p>
     <p><strong>${escapeHtml(blog.summary)}</strong></p>
     <div class="tech-row">${blog.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div>
     <div class="modal-section">${blog.body.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}</div>

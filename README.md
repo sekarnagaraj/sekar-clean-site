@@ -1,35 +1,34 @@
 # Sekar Nagaraj Professional Portfolio
 
-A clean static professional portfolio website for Sekar Nagaraj.
-
-## Why this version
-
-This is intentionally static HTML/CSS/JS. No Next.js, no npm install, no build command and no import alias issues.
-
-## Deploy on Vercel
-
-Use these Vercel settings:
-
-- Framework Preset: Other
-- Build Command: leave empty
-- Output Directory: .
+Static professional portfolio focused on AI platforms, data engineering, Azure cloud architecture, modernization, SRE, Power BI and technical leadership.
 
 ## Files
 
-- `index.html` - page structure
-- `styles.css` - design and responsive layout
-- `script.js` - rendering, filtering and modal interactions
-- `content-data.js` - all portfolio content, projects, blogs and skills
-- `assets/profile.jpg` - profile photo
-- `docs/ADD_CONTENT_GUIDE.md` - how to add new skills, projects and blogs
+```text
+index.html        Website structure
+styles.css        Styling and responsive layout
+script.js         Rendering, filters and modal behavior
+content-data.js   Portfolio content
+assets/profile.jpg
+/docs/CONTENT_MANAGEMENT.md
+```
 
-## How to update the site
+## Deployment
 
-Edit `content-data.js`, save, commit and push to GitHub.
-Vercel will redeploy automatically.
+This is a static site and does not require a build step.
 
-```bash
-git add .
-git commit -m "Update portfolio content"
-git push
+Vercel settings:
+
+```text
+Framework Preset: Other
+Build Command: leave empty
+Output Directory: .
+```
+
+## Updating content
+
+See:
+
+```text
+docs/CONTENT_MANAGEMENT.md
 ```
